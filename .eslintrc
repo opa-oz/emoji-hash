@@ -12,5 +12,10 @@
   ],
   "rules": {
     "prettier/prettier": 2
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
   }
 }
