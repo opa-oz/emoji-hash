@@ -1,5 +1,5 @@
 function getHash(input: string): string {
-    return input;
+  return input;
 }
 
 export default getHash;
