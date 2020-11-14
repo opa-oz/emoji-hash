@@ -1,5 +1,5 @@
 <h1 align="center">  
-  <a href="https://dialogs.yandex.ru/store/skills/todo"><img src="/documentation/assets/avatar.png" width="150"/></a>  
+  <img src="https://opa-oz.github.io/emoji-hash/docs/logo.png" width="150"/>
   <br>  
   EmojiHash  
 </h1>  
