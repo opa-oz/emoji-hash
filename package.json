@@ -31,6 +31,7 @@
     "rimraf": "^3.0.2",
     "shuffle-array": "^1.0.1",
     "standard-version": "^9.0.0",
+    "typedoc": "^0.19.2",
     "typescript": "^4.0.5"
   },
   "scripts": {
@@ -40,7 +41,8 @@
     "build": "rimraf ./build && tsc && cp src/types/index.d.ts lib/types.d.ts",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "generate-table": "node scripts/pre-generate.js"
+    "generate-table": "node scripts/pre-generate.js",
+    "docs:type": "typedoc --out docs/typedoc src"
   },
   "jest": {
     "moduleNameMapper": {
@@ -55,6 +57,13 @@
       "src/**/*.ts",
       "!src/**/*.d.ts",
       "!**/node_modules/**"
+    ],
+    "coverageDirectory": "docs/coverage",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "html"
     ]
   }
 }
