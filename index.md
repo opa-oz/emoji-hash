@@ -10,6 +10,9 @@
 <img src="https://badgen.net/badge/license/MIT/blue" alt="license-mit" data-canonical-src="https://badgen.net/badge/license/MIT/blue" style="max-width:100%;">  
 </p>  
 
+- [Typedoc](https://opa-oz.github.io/emoji-hash/docs/typedoc/)
+- [Coverage](https://opa-oz.github.io/emoji-hash/docs/coverage/)
+
 ## Table of Contents
 - 🔌 [Installation](#installation)
 - 🐥 [Usage](#usage)
