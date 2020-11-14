@@ -1,5 +1,8 @@
+import transformBinary from './methods/transformBinary';
+import getBitwise from './methods/getBitwise';
+
 function getHash(input: string): string {
-  return input;
+  return transformBinary(getBitwise(input));
 }
 
 export default getHash;
