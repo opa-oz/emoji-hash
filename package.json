@@ -7,6 +7,11 @@
   "author": "opa_oz <opaozhub@gmail.com>",
   "license": "MIT",
   "private": false,
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier-format && npm run lint"
+    }
+  },
   "dependencies": {
     "emoji-named-characters": "^1.0.2"
   },
@@ -16,6 +21,7 @@
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
     "standard-version": "^9.0.0",
