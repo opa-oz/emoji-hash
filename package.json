@@ -1,6 +1,6 @@
 {
   "name": "emoji-hash-gen",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Generates hash of string in emoji",
   "main": "./lib/index.js",
   "type": "./lib/types.d.ts",
