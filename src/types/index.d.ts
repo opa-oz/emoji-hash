@@ -2,6 +2,7 @@ export type EmojiTable = { [key: string]: string };
 
 export type Options = {
   base: number;
+  length?: number;
 };
 
 export interface EmojiHasher {

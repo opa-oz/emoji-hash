@@ -39,24 +39,33 @@ class EmojiHasherSingletone implements EmojiHasher {
 
   transformBinary(input: number, options?: Options): string {
     const stack = [];
-    const sign = input < 0 ? emojiTable[0] : '';
-    const { base } = options ?? this.defaultOptions;
+    const sign = input < 0 ? this.table[0] : '';
+    const { base, length } = options ?? this.defaultOptions;
     let num;
     let result = '';
+    let expectedLength = -1;
+
+    if (length) {
+      if (length <= 0) {
+        throw new Error('property `length` must equals at least 1');
+      }
+
+      expectedLength = length - (sign ? 1 : 0);
+    }
 
     if (base > this.maxBase) {
-      throw new Error(`'base' shouldn't be bigger than ${this.maxBase}`);
+      throw new Error(`'base' mustn't be bigger than ${this.maxBase}`);
     }
 
     input = Math.abs(input);
 
-    while (input >= base) {
+    while (input >= base && stack.length !== expectedLength) {
       num = input % base;
       input = Math.floor(input / base);
       stack.push(this.table[num]);
     }
 
-    if (input > 0 && input < base) {
+    if (input > 0 && input < base && stack.length !== expectedLength) {
       stack.push(this.table[input]);
     }
 
@@ -69,7 +78,7 @@ class EmojiHasherSingletone implements EmojiHasher {
 
   useTable(newTable: EmojiTable): void {
     if (!newTable || !Object.keys(newTable).length) {
-      throw new Error('newTable should contains dictionary');
+      throw new Error('newTable must contains dictionary');
     }
 
     this.table = newTable;
