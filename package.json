@@ -36,6 +36,7 @@
   "scripts": {
     "release": "standard-version",
     "test": "jest",
+    "coverage": "jest --coverage",
     "build": "rimraf ./build && tsc && cp src/types/index.d.ts lib/types.d.ts",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
@@ -49,6 +50,11 @@
       "ts",
       "js",
       "d.ts"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.d.ts",
+      "!**/node_modules/**"
     ]
   }
 }

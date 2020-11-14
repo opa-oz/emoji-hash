@@ -43,13 +43,15 @@ class EmojiHasherSingletone implements EmojiHasher {
     const { base, length } = options ?? this.defaultOptions;
     let num;
     let result = '';
-    let expectedLength = -1;
+    let expectedLength = 0;
+    let shouldUseLength = false;
 
-    if (length) {
+    if (length !== null && length !== undefined && !Number.isNaN(length)) {
       if (length <= 0) {
         throw new Error('property `length` must equals at least 1');
       }
 
+      shouldUseLength = true;
       expectedLength = length - (sign ? 1 : 0);
     }
 
@@ -59,14 +61,20 @@ class EmojiHasherSingletone implements EmojiHasher {
 
     input = Math.abs(input);
 
-    while (input >= base && stack.length !== expectedLength) {
+    while (input >= base) {
+      if (shouldUseLength && stack.length >= expectedLength) {
+        break;
+      }
+
       num = input % base;
       input = Math.floor(input / base);
       stack.push(this.table[num]);
     }
 
-    if (input > 0 && input < base && stack.length !== expectedLength) {
-      stack.push(this.table[input]);
+    if (input > 0 && input < base) {
+      if (!shouldUseLength || (shouldUseLength && stack.length < expectedLength)) {
+        stack.push(this.table[input]);
+      }
     }
 
     for (let i = stack.length - 1; i >= 0; i--) {
@@ -77,7 +85,7 @@ class EmojiHasherSingletone implements EmojiHasher {
   }
 
   useTable(newTable: EmojiTable): void {
-    if (!newTable || !Object.keys(newTable).length) {
+    if (!newTable || typeof newTable !== 'object' || !Object.keys(newTable).length) {
       throw new Error('newTable must contains dictionary');
     }
 

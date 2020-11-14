@@ -28,3 +28,17 @@ describe('Usage with different table', () => {
     });
   });
 });
+
+describe('When gets incorrect table', () => {
+  const testTable = ['', null, 1, {}, []];
+
+  testTable.forEach((table) => {
+    test('should throw an error', () => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      const f = () => useTable(table);
+
+      expect(f).toThrowError();
+    });
+  });
+});
