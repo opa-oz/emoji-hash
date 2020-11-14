@@ -100,11 +100,11 @@ useTable(newTable: EmojiTable): void;
 ### Table
 **Description:** 
 Default table contains 62 literals, generated from:
-|Symbols| Count |
-|--|--|
-| `a-z` | 26 |
-| `A-Z` | 26 |
-| `0-9` | 10 |
+```
+| a-z | 26 |
+| A-Z | 26 |
+| 0-9 | 10 |
+```
 
 **Re-generate:**
 ```bash
