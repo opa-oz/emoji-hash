@@ -1,4 +1,4 @@
-import { getHash } from '../src';
+import { getBitwise, getHash } from '../src';
 
 const testTable = [
   {
@@ -53,5 +53,34 @@ testTable.forEach(({ input1, input2, title, expected }) => {
       );
     }
     expect(tryOne === tryTwo).toEqual(expected);
+  });
+});
+
+const testTableForHash = [
+  'https://yandex.ru',
+  'https://github.com/opa-oz/emoji-hash',
+  'My text is awesome',
+  'Hi guys',
+  'opa-oz',
+  '@gahara',
+  'Python',
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+];
+
+testTableForHash.forEach((input) => {
+  test('Should generate hash correctly', () => {
+    expect(getHash(input)).toMatchSnapshot();
+  });
+});
+
+describe('Get bitwise not longer than 5 emoji', () => {
+  testTableForHash.forEach((input) => {
+    test('should generate hash correctly', () => {
+      const output = getHash(input, { length: 5, base: 62 });
+
+      // Cannot use symbols count, because of an emoji usually isn't a single symbol
+      // expect(output.length).toEqual(5);
+      expect(output).toMatchSnapshot();
+    });
   });
 });

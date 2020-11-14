@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 1`] = `"🐞✔️🐂📍🚎"`;
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 2`] = `"💥🕕🕠🔇🈺"`;
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 3`] = `"💥📌🚛🎅👮"`;
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 4`] = `"💥😺🍘😁🔝"`;
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 5`] = `"💥🈵👹❔🛄"`;
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 6`] = `"💥🎸🍭❔🕕"`;
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 7`] = `"💥😁🌂❔🔇"`;
+
+exports[`Get bitwise not longer than 5 emoji should generate hash correctly 8`] = `"💥🔻🈲🈵😺"`;
+
+exports[`Should generate hash correctly 1`] = `"⛔️🐞✔️🐂📍🚎"`;
+
+exports[`Should generate hash correctly 2`] = `"💥3️⃣🕕🕠🔇🈺"`;
+
+exports[`Should generate hash correctly 3`] = `"💥🕕📌🚛🎅👮"`;
+
+exports[`Should generate hash correctly 4`] = `"💥❔🎯😺🍘😁🔝"`;
+
+exports[`Should generate hash correctly 5`] = `"💥❔🛄🈵👹❔🛄"`;
+
+exports[`Should generate hash correctly 6`] = `"💥✨🎸🍭❔🕕"`;
+
+exports[`Should generate hash correctly 7`] = `"💥⛔️👹😁🌂❔🔇"`;
+
+exports[`Should generate hash correctly 8`] = `"💥❔🕠🔻🈲🈵😺"`;

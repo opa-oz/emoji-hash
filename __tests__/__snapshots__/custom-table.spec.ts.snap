@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Usage with different table should generate hash correctly with fake table 1`] = `"🈴🍟😟🌐🌴🆚"`;
+
+exports[`Usage with different table should generate hash correctly with fake table 2`] = `"🚺🍅🍬📝💘🐽"`;
+
+exports[`Usage with different table should generate hash correctly with fake table 3`] = `"🚺🍬🌉🐰♐️🔄"`;
+
+exports[`Usage with different table should generate hash correctly with fake table 4`] = `"🚺🎌🚩📺🐬💳👑"`;
+
+exports[`Usage with different table should generate hash correctly with fake table 5`] = `"🚺🎌🎩🚆😔🎌🎩"`;
+
+exports[`Usage with different table should generate hash correctly with fake table 6`] = `"🚺💹🚳🔳🎌🍬"`;
+
+exports[`Usage with different table should generate hash correctly with fake table 7`] = `"🚺🈴😔💳🍆🎌💘"`;
+
+exports[`Usage with different table should generate hash correctly with fake table 8`] = `"🚺🎌📝🕕🈚️🚆📺"`;

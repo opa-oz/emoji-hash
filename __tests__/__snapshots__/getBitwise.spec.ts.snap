@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get bitwise of string should generate hash correctly 1`] = `1915103089`;
+
+exports[`Get bitwise of string should generate hash correctly 2`] = `-633154078`;
+
+exports[`Get bitwise of string should generate hash correctly 3`] = `-773262868`;
+
+exports[`Get bitwise of string should generate hash correctly 4`] = `-1780413401`;
+
+exports[`Get bitwise of string should generate hash correctly 5`] = `-1010760648`;
+
+exports[`Get bitwise of string should generate hash correctly 6`] = `-287727358`;
+
+exports[`Get bitwise of string should generate hash correctly 7`] = `-1889329924`;
+
+exports[`Get bitwise of string should generate hash correctly 8`] = `-1512942320`;
