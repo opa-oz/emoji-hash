@@ -1,0 +1,26 @@
+{
+  "name": "emoji-hash",
+  "version": "0.0.1",
+  "description": "Generates hash of string in emoji",
+  "main": "build/index.js",
+  "repository": "https://github.com/opa-oz/emoji-hash.git",
+  "author": "opa_oz <opaozhub@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "emoji-named-characters": "^1.0.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "scripts": {
+    "release": "standard-version",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint . --ext .ts"
+  }
+}
