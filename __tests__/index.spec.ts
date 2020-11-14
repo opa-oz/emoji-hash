@@ -1,4 +1,4 @@
-import getHash from '../src';
+import { getHash } from '../src';
 
 const testTable = [
   {

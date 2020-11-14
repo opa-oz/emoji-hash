@@ -105,6 +105,7 @@ dist
 
 .idea/
 
-build/
+lib
+build
 
-src/.DS_Store
+.DS_Store

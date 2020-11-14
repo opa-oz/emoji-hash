@@ -2,7 +2,8 @@
   "name": "emoji-hash",
   "version": "0.0.1",
   "description": "Generates hash of string in emoji",
-  "main": "build/index.js",
+  "main": "./lib/index.js",
+  "type": "./lib/types.d.ts",
   "repository": "https://github.com/opa-oz/emoji-hash.git",
   "author": "opa_oz <opaozhub@gmail.com>",
   "license": "MIT",
@@ -35,7 +36,7 @@
   "scripts": {
     "release": "standard-version",
     "test": "jest",
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./build && tsc && cp src/types/index.d.ts lib/types.d.ts",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "generate-table": "node scripts/pre-generate.js"
@@ -43,6 +44,11 @@
   "jest": {
     "moduleNameMapper": {
       "^table.js$": "<rootDir>/src/generated/table.js"
-    }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "d.ts"
+    ]
   }
 }
