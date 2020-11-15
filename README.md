@@ -11,7 +11,10 @@
 [![License: MIT][license]](https://opensource.org/licenses/MIT)
 [![PRs Welcome][pr]](https://github.com/opa-oz/emoji-hash/pulls)
 [![Minsize][minsize]](https://www.npmjs.com/package/emoji-hash-gen)
+![CodeQL](https://github.com/opa-oz/emoji-hash/workflows/CodeQL/badge.svg?branch=main)
+![Node.js CI](https://github.com/opa-oz/emoji-hash/workflows/Node.js%20CI/badge.svg?branch=main)
 
+- [Sandbox](https://opa-oz.github.io/emoji-hash/docs/sandbox/)
 - [Typedoc](https://opa-oz.github.io/emoji-hash/docs/typedoc/)
 - [Coverage](https://opa-oz.github.io/emoji-hash/docs/coverage/)
 
