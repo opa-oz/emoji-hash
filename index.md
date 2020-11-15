@@ -5,10 +5,12 @@
 </h1>  
   
 <h4 align="center">Lightweight, zero-dependency library for hash-generation in emoji style 🍌</h4>  
-<p align="center">  
-  <br/>  
-<img src="https://badgen.net/badge/license/MIT/blue" alt="license-mit" data-canonical-src="https://badgen.net/badge/license/MIT/blue" style="max-width:100%;">  
-</p>  
+ 
+
+[![Version npm][version]](https://www.npmjs.com/package/emoji-hash-gen)
+[![License: MIT][license]](https://opensource.org/licenses/MIT)
+[![PRs Welcome][pr]](https://github.com/opa-oz/emoji-hash/pulls)
+[![Minsize][minsize]](https://www.npmjs.com/package/emoji-hash-gen)
 
 - [Typedoc](https://opa-oz.github.io/emoji-hash/docs/typedoc/)
 - [Coverage](https://opa-oz.github.io/emoji-hash/docs/coverage/)
@@ -208,3 +210,9 @@ $> yarn lint && yarn prettier-format
 
 ## License
 emoji-hash-gen is copyright © 2020 [opa_oz](https://github.com/opa-oz). It is free software and may be redistributed under the terms specified in the [license](LICENSE).
+
+[version]: http://img.shields.io/npm/v/emoji-hash-gen.svg?style=flat-square
+[license]: https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square
+[pr]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[minsize]: https://img.shields.io/bundlephobia/min/emoji-hash-gen?style=flat-square
+
