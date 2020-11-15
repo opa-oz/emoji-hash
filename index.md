@@ -12,6 +12,7 @@
 [![PRs Welcome][pr]](https://github.com/opa-oz/emoji-hash/pulls)
 [![Minsize][minsize]](https://www.npmjs.com/package/emoji-hash-gen)
 
+- [Sandbox](https://opa-oz.github.io/emoji-hash/docs/sandbox/)
 - [Typedoc](https://opa-oz.github.io/emoji-hash/docs/typedoc/)
 - [Coverage](https://opa-oz.github.io/emoji-hash/docs/coverage/)
 
