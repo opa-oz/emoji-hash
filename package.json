@@ -1,10 +1,11 @@
 {
   "name": "emoji-hash-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates hash of string in emoji",
   "main": "./lib/index.js",
   "type": "./lib/types.d.ts",
   "repository": "https://github.com/opa-oz/emoji-hash.git",
+  "homepage": "https://opa-oz.github.io/emoji-hash/",
   "author": "opa_oz",
   "license": "MIT",
   "private": false,
