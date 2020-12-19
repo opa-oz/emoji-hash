@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Generates hash of string in emoji",
   "main": "./lib/index.js",
-  "type": "./lib/types.d.ts",
+  "types": "./lib/types.d.ts",
   "repository": "https://github.com/opa-oz/emoji-hash.git",
   "homepage": "https://opa-oz.github.io/emoji-hash/",
   "author": "opa_oz",
@@ -14,6 +14,7 @@
       "pre-commit": "npm run prettier-format && npm run lint"
     }
   },
+  "keywords": ["zero-dependency", "emoji", "hash", "hash-generation", "front-end", "back-end"],
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
