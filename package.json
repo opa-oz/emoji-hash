@@ -1,6 +1,6 @@
 {
   "name": "emoji-hash-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates hash of string in emoji",
   "main": "./lib/index.js",
   "types": "./lib/types.d.ts",
@@ -14,7 +14,14 @@
       "pre-commit": "npm run prettier-format && npm run lint"
     }
   },
-  "keywords": ["zero-dependency", "emoji", "hash", "hash-generation", "front-end", "back-end"],
+  "keywords": [
+    "zero-dependency",
+    "emoji",
+    "hash",
+    "hash-generation",
+    "front-end",
+    "back-end"
+  ],
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",

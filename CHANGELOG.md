@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/opa-oz/emoji-hash/compare/v1.0.1...v1.0.2) (2020-12-19)
+
+
+### Bug Fixes
+
+* badge ([c238e6e](https://github.com/opa-oz/emoji-hash/commit/c238e6e1db95970d63b0ccde98448bc779494664))
+* badge ([ed897c1](https://github.com/opa-oz/emoji-hash/commit/ed897c155331f105a54e50f5cdc7b807f58b7bb7))
+* Fixed types path ([cd27be3](https://github.com/opa-oz/emoji-hash/commit/cd27be3803a1cbcbd429bc7feb0424f667d37755))
+
 ### [1.0.1](https://github.com/opa-oz/emoji-hash/compare/v1.0.0...v1.0.1) (2020-11-15)
 
 
