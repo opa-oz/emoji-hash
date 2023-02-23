@@ -1,0 +1,20 @@
+name: "Plumber Check"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ main ]
+  schedule:
+    - cron: '16 12 * * 4'
+
+jobs:
+  scan:
+    name: Plumber
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Plumber Check
+        uses: opa-oz/plumber-action@v1.0.1
