@@ -17,4 +17,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Plumber Check
-        uses: opa-oz/plumber-action@v1.0.1
+        uses: opa-oz/plumber-action@v1.0.2
