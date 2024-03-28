@@ -1,4 +1,5 @@
 import { getBitwise } from '../src';
+import { describe, test } from '@jest/globals';
 
 const testTableForHash = [
   'https://yandex.ru',

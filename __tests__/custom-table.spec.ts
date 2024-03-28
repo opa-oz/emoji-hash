@@ -1,4 +1,5 @@
 import Hasher, { getHash, useTable } from '../src';
+import { describe, test, beforeAll, afterAll } from '@jest/globals';
 import fakeTable from '../__mocks__/table';
 
 describe('Usage with different table', () => {
@@ -38,7 +39,7 @@ describe('When gets incorrect table', () => {
       // @ts-ignore
       const f = () => useTable(table);
 
-      expect(f).toThrowError();
+      expect(f).toThrow();
     });
   });
 });

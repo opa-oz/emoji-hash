@@ -3,7 +3,7 @@ import { getBitwise, transformBinary } from '../src';
 test('Should throw an error when gets incorrect base', () => {
   const f = () => transformBinary(getBitwise('random input'), { base: 100 });
 
-  expect(f).toThrowError();
+  expect(f).toThrow();
 });
 
 describe('When gets incorrect length', () => {
@@ -13,7 +13,7 @@ describe('When gets incorrect length', () => {
     test(`should throw an error (length=${length})`, () => {
       const f = () => transformBinary(getBitwise('random input'), { base: 62, length });
 
-      expect(f).toThrowError();
+      expect(f).toThrow();
     });
   });
 });

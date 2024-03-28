@@ -14,6 +14,7 @@
 ![CodeQL](https://github.com/opa-oz/emoji-hash/workflows/CodeQL/badge.svg?branch=main)
 ![Node.js CI](https://github.com/opa-oz/emoji-hash/workflows/Node.js%20CI/badge.svg?branch=main)
 [![codecov](https://codecov.io/gh/opa-oz/emoji-hash/branch/main/graph/badge.svg)](https://codecov.io/gh/opa-oz/emoji-hash)
+[![Coverage](./badges/coverage.svg)](./badges/coverage.svg)
 
 - [Sandbox](https://opa-oz.github.io/emoji-hash/docs/sandbox/)
 - [Typedoc](https://opa-oz.github.io/emoji-hash/docs/typedoc/)
@@ -219,3 +220,8 @@ emoji-hash-gen is copyright © 2020 [opa_oz](https://github.com/opa-oz). It is f
 [license]: https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square
 [pr]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [minsize]: https://img.shields.io/bundlephobia/min/emoji-hash-gen?style=flat-square
+
+
+----
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S1UZ9P7)

@@ -1,4 +1,5 @@
-import { getBitwise, getHash } from '../src';
+import { getHash } from '../src';
+import { describe, test } from '@jest/globals';
 
 const testTable = [
   {
